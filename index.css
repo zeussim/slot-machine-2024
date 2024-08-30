@@ -20,7 +20,7 @@ body {
   /*background: #ffffff;*/  
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -39,6 +39,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .doors {
@@ -63,7 +64,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 13rem;
+  font-size: 12rem;
   font-weight: bolder;
 }
 
@@ -84,14 +85,29 @@ button {
 
 #btnreset {
   position: absolute;
-  bottom: 90px;
-  right: 80px;
+  bottom: 70px;
+  right: 1px;
   cursor: pointer;
   font-size: 1.2rem;
   margin: 0 0.2rem;
   border: none;
   border-radius: 5px;
   padding: 10px 15px;
+}
+
+#bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#reseter {
+  background-color: #312067;
+  color: gray;
 }
 
 #reseter:hover {
@@ -106,7 +122,9 @@ button {
 }
 
 input {
-  width: 100px;
+  background-color: #312067;
+  color: gray;
+  width: 70px;
   cursor: pointer;
   font-size: 1.2rem;
   margin: 0 0.2rem;
@@ -117,8 +135,8 @@ input {
 }
 
 #spinner {
-  width: 200px;
-  height: 100px;
+  width: 150px;
+  height: 80px;
   font-size: 3.2rem;
   box-shadow: 2px 2px 28px rgba(19,160,199), 0 10px 10px rgba(0,0,0,0.22);
 }
